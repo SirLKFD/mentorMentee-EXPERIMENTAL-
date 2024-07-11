@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="mentorMentee.MainPage"
+             
+             
+              Title="Login/Signup">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Mentor-Mentee App"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="PRE-ALPHA BUILD v0.0.1"
+                Style="{StaticResource SubHeadline}"
+                FontSize="16"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Entry x:Name="entryUsername" Placeholder="Username" />
+            <Entry x:Name="entryPassword" Placeholder="Password" />
+            <Entry x:Name="entryInsertData" Placeholder="TEST TO INSERT DATA" />
+
+
+
+            <Button Text="Login" BackgroundColor="Green" Clicked="btnLogin_Clicked"/>
+            <Button Text="Create Account" BackgroundColor="Blue" Clicked="btnCreate_Clicked"/>
+            <Button Text="Test Database Connection" BackgroundColor="Black" Clicked="btnTest_Clicked"/>
+            <Button x:Name="btnInsert" Text="TEST TO INSERT DATA" BackgroundColor="Maroon" Clicked="btnInsert_Clicked" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
